@@ -9,6 +9,31 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
+
+    <meta name="description" content="Karl Max Enterprise | Superior insurance by trustworthy individuals.">
+    <meta name="keywords" content="insurance, home, flood, mobile home, affordable insurance, cheap insurance">
+    <meta charset="utf-8">
+    <meta name="referrer" content="strict-origin" />
+    <link rel="canonical" href="https://karlmaxenterprise.com/" />
+    <!--Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Karl Max Enterprise">
+    <meta property="og:url" content="https://karlmaxenterprise.com/">
+    <meta property="og:title" content="Karl Max Enterprise | Superior insurance by trustworthy individuals.">
+    <meta property="og:description" content="Karl Max Enterprise | Superior insurance by trustworthy individuals.">
+    <meta property="og:image" content="Karl Max Enterprise/assets/img/Transparent Logo.png">
+
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="Karl Max Enterprise">
+    <meta name="twitter:url" content="https://allusionsoftware.com">
+    <meta name="twitter:title" content="Karl Max Enterprise | Superior insurance by trustworthy individuals.">
+    <meta name="twitter:description" content="Karl Max Enterprise | Superior insurance by trustworthy individuals.">
+    <meta name="twitter:image" content="Karl Max Enterprise/assets/img/Transparent Logo.png">
+    
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
     <!-- Favicons -->
     <link href="assets/img/Transparent Logo.ico" rel="icon">
     <link href="assets/img/Transparent Logo.png" rel="apple-touch-icon">
@@ -39,7 +64,7 @@
 
         <!--    <h1 class="logo me-auto me-lg-0"><a href="index.html">Karl Max Enterprise<span>.</span></a></h1>
              Uncomment below if you prefer to use an image logo -->
-             <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/Transparent Logo.png" alt="" class="img-fluid"></a>
+             <a href="index.html" class="logo me-auto me-lg-0" id="nav-img"><img src="assets/img/Transparent Logo.png" alt="" class="img-fluid"></a>
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
@@ -87,19 +112,19 @@
                 <div class="col-xl-2 col-md-4">
                     <div class="icon-box">
                         <i class="ri-store-line"></i>
-                        <h3><a href="">Home Insurance</a></h3>
+                        <h3><a href="#contact">Home Insurance</a></h3>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4">
                     <div class="icon-box">
                         <i class="ri-calendar-todo-line"></i>
-                        <h3><a href="">Mobile Home Insurance</a></h3>
+                        <h3><a href="#contact">Mobile Home Insurance</a></h3>
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4">
                     <div class="icon-box">
                         <i class="ri-paint-brush-line"></i>
-                        <h3><a href="">Flood Insurance</a></h3>
+                        <h3><a href="#contact">Flood Insurance</a></h3>
                     </div>
                 </div>
               <!--  <div class="col-xl-2 col-md-4">
@@ -938,7 +963,21 @@
                 text.style.display = "none";
             }
         }
+        document.addEventListener("DOMContentLoaded", function(event) {
+    // Your code to run since DOM is loaded and ready
+            window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= 1200) {
+        console.log(window.innerHeight);
+        document.getElementById("nav-img").getElementsByTagName("img").style.maxHeight = "150px";
+      // you're at the bottom of the page
+      console.log("Bottom of page");
+    }
+};
+});
+
     </script>
+
+
 </body>
 
 </html>
